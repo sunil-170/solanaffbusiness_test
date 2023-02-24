@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@500&display=swap');
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    list-style-type: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box;
+}
+
+/* font-family */
+.ff_Poppins {
+    font-family: 'Poppins';
+}
+
+.ff_Roboto {
+    font-family: 'Roboto';
+}
+
+/* root */
+:root {
+    /* font_size */
+    --fs-2xl: 48px;
+    --fs-xl: 40px;
+    --fs-lg: 36px;
+    --fs-md: 24px;
+    --fs-sm: 20px;
+    --fs-ss: 18px;
+    /* color */
+
+    --color-yellow: #F6E300;
+    --color-lightyellow: #FFF03F;
+    --color-red: #F4241E;
+    --color-black: #000000;
+}
+
+/* color */
+
+.bg_yellow {
+    background-color: var(--color-yellow);
+}
+
+.bg_lightyellow {
+    background-color: var(--color-lightyellow);
+}
+
+.bg_red {
+    background-color: var(--color-red);
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.black {
+    color: var(--color-black);
+}
+
+/* font_size */
+
+.fs_2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs_xl {
+    font-size: var(--fs-xl);
+}
+
+.fs_lg {
+    font-size: var(--fs-lg);
+}
+
+.fs_md {
+    font-size: var(--fs-md);
+}
+
+.fs_sm {
+    font-size: var(--fs-sm);
+}
+
+.fs_ss {
+    font-size: var(--fs-ss);
+}
+
+/* font-weight */
+.fw_700 {
+    font-weight: 700;
+}
+
+.fw_600 {
+    font-weight: 600;
+}
+
+.fw_500 {
+    font-weight: 500;
+}
+
+.fw_400 {
+    font-weight: 400;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<navbar */
+nav ul li {
+    padding-left: 40px;
+}
+
+.nab_btn {
+    background: white;
+    border-radius: 10px;
+    padding: 12px 32px;
+}
+
+nav ul li :hover {
+    color: #F4241E;
+}
+
+.burger1 {
+    top: 10px;
+    left: 116px;
+}
+
+.burger2 {
+    top: 20px;
+    left: 350px;
+}
+
+.burger3 {
+    bottom: 30px;
+    left: 300px;
+}
+
+.burger4 {
+    bottom: 20px;
+    left: 0px;
+}
+
+.burger5 {
+    top: 10px;
+    right: 35px;
+}
+
+.burger6 {
+    top: 40px;
+    right: 380px;
+}
+
+.burger8 {
+    bottom: 20px;
+    right: 300px;
+}
+
+.burger7 {
+    bottom: 80px;
+    right: 0px;
+}
+
+/* section2 */
+.discover_btn {
+    background: #F4241E;
+    border-radius: 10px;
+    padding: 15px 32px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<section5 */
+/* The actual timeline (the vertical ruler) */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    background-color: red;
+    top: 1px;
+    bottom: 0;
+    left: 50%;
+    margin-left: -4px;
+}
+
+/* Container around content */
+.box {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.box::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid white;
+    top: 0;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -12px;
+}
+
+/* The actual content */
+.content {
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+}
+
+.cheese_img1 {
+    top: 0;
+    left: 80px;
+}
+
+.cheese_img2 {
+    left: -10px;
+    top: 244px;
+}
+
+.cheese_img3 {
+    right: 271px;
+}
+
+.cheese_img4 {
+    top: 0;
+    right: 0;
+}
+
+.cheese_img5 {
+    bottom: 170px;
+    left: 170px;
+}
+
+.cheese_img6 {
+    left: -30px;
+    bottom: 3px;
+}
+
+.cheese_img7 {
+    bottom: 0px;
+    right: 265px;
+}
+
+.cheese_img8 {
+    right: 0;
+    bottom: 75px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<accordion<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<,,, */
+.accordion {
+    max-width: 992px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    background-color: var(--color-lightyellow);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color .15s ease-in-out,
+        background-color .15s ease-in-out,
+        border-color .15s ease-in-out,
+        box-shadow .15s ease-in-out,
+        border-radius .15s ease;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-lightyellow);
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+
+}
+
+.accordion-body {
+    background-color: var(--color-lightyellow);
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<footer */
+.vector_1_img {
+    width: 520px;
+}
+
+.vector_1_img2 {
+    width: 65px;
+}
+
+.vector_1_img3 {
+    width: 118px;
+}
+
+
+@media (max-width:992px) {
+
+    /* root */
+    :root {
+        /* font_size */
+        --fs-2xl: 35px;
+        --fs-xl: 40px;
+        --fs-lg: 36px;
+        --fs-md: 24px;
+        --fs-sm: 20px;
+        --fs-ss: 18px;
+    }
+}
+
+@media (max-width:1200px) {
+    nav ul {
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        background-color: var(--color-lightyellow);
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        line-height: 4;
+        transition: 0.8s;
+        z-index: 2;
+    }
+
+    .left {
+        left: 0;
+        top: 0;
+    }
+
+    .span {
+        padding: 3px 18px;
+        background-color: #0B132A;
+        border-radius: 10px;
+        margin-top: 3px;
+        z-index: 3;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .box {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .box::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+}
+
+@media (min-width:575.98px) {
+    .hero_btn {
+        background: #F53838;
+        border-radius: 10px;
+        padding: 20px 50px;
+    }
+}
+
+@media (min-width:1199.98px) {
+    .hero_btn {
+        background: #F53838;
+        border-radius: 10px;
+        padding: 17px 77px;
+    }
+}
+
+@media (max-width:576px) {
+    .vector_1_img {
+        width: 285px;
+    }
+
+    .vector_1_img2 {
+        width: 55px;
+    }
+
+    .vector_1_img3 {
+        width: 108px;
+    }
+
+    .welcome_img {
+        width: 258px !important;
+    }
+
+}
